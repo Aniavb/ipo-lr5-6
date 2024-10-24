@@ -1,11 +1,7 @@
 with open('Текстовый документ.txt', 'r', encoding="utf-8") as file:  #открываем файл для чтения
     text = file.read()   #считываем файл
-    words = text.split()  #делим текст по разделителю 
-unique = []   #создаём пустой список для хранения уникальных слов
-for word in words:   #перебираем элементы word в words
-    if word not in unique:  #если элементов word нет в списке unique
-        unique.append(word)  # то добавляем элемент
-res = ' '.join(unique)   #соединяем список в строку
-with open('Уникальные слова.txt', 'w') as f:   #открыввваем новый файл для записи
-    f.write(res)    #записываем в файл уникальные слова
-print(res)   #выводим уникальные слова4
+unique = set(text.split())#создаём множество для хранения уникальных слов
+with open('Уникальные слова.txt', 'w', encoding="utf-8") as f:   #открываем новый файл для записи
+    for word in unique: #перебираем слова в множестве
+        f.write(word + ' ')    #записываем в файл уникальные слова
+print(unique)   #выводим уникальные слова
