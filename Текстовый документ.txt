@@ -1,0 +1,9 @@
+1. Learn the basics of Python programming.
+2. Development of skills in working with basic syntactic structures.
+3. Deepening knowledge about functions, modules and various data types.
+Tasks:
+1. Familiarization with the syntax of the Python language.
+2. Mastering the creation and use of functions and modules.
+3. Practical application of conditional statements and loops.
+4. Understanding the basics of working with data collections.
+5. Solving practical problems based on the concepts learned.
